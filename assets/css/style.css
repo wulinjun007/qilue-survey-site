@@ -332,6 +332,75 @@ body.contactbar-hidden .contact-bar { display: none; }
   display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
 }
 
+/* ---------- 图片组件（概念示意影像） ---------- */
+.visual { position: relative; }
+.visual img { display: block; width: 100%; object-fit: cover; }
+.visual--hero { max-width: 1060px; margin: 46px auto 0; }
+.visual--hero img { aspect-ratio: 21 / 9; border-radius: 16px; box-shadow: var(--lv-shadow); }
+.visual--wide { border-radius: 16px; overflow: hidden; box-shadow: var(--lv-shadow); }
+.visual--wide img { aspect-ratio: 21 / 9; }
+.visual--card { aspect-ratio: 16 / 9; }
+.chip--onimg {
+  position: absolute; top: 12px; left: 12px;
+  background: rgba(28, 36, 21, .85); color: #fff;
+  backdrop-filter: blur(4px); border-radius: var(--r-pill);
+  height: 26px; padding: 0 12px; font-size: 11.5px;
+  display: inline-flex; align-items: center; gap: 6px;
+}
+.fig-cap { margin-top: 12px; font-size: 12.5px; color: var(--lv-ink-3); }
+
+/* 服务卡（带图版） */
+.card--media { padding: 0; overflow: hidden; }
+.card--media .card__body { padding: 24px 24px 26px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
+.card--media .card__body h3 { font-size: 17px; font-weight: 600; }
+.card--media .card__body p { font-size: 14px; color: var(--lv-ink-2); }
+.card--media .card__foot { margin-top: auto; padding-top: 8px; }
+
+/* ---------- 服务方向索引（借鉴竞品类目结构，候选性质） ---------- */
+.dir-card {
+  margin-top: 26px;
+  background: var(--lv-bg); border: 1px solid var(--lv-hairline);
+  border-radius: var(--r-card); box-shadow: var(--lv-shadow);
+  padding: 26px 26px 22px;
+}
+.dir-card h3 { font-size: 16px; font-weight: 600; margin-bottom: 6px; }
+.dir-card > p { font-size: 13.5px; color: var(--lv-ink-2); margin-bottom: 16px; }
+.dir-list { display: flex; flex-wrap: wrap; gap: 10px; }
+.dir-list .chip--ghost { height: 34px; padding: 0 16px; font-size: 13.5px; color: var(--lv-ink); }
+.dir-card .card__foot { margin-top: 16px; padding-top: 0; }
+
+/* ---------- 应用场景列表（服务详情页） ---------- */
+.scene-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 16px; margin-top: 14px; max-width: 760px; }
+.scene-list span {
+  display: flex; align-items: flex-start; gap: 8px;
+  font-size: 14px; color: var(--lv-ink-2);
+  background: var(--lv-tint); border-radius: 10px; padding: 10px 14px;
+}
+.scene-list svg { width: 15px; height: 15px; flex: none; margin-top: 4px; color: var(--lv-mark); }
+
+/* ---------- 桌面浮动咨询钮（借鉴竞品在线咨询，≤900 由底栏替代） ---------- */
+.float-cta { display: none; }
+@media (min-width: 901px) {
+  .float-cta {
+    display: inline-flex; position: fixed; right: 26px; bottom: 26px; z-index: 55;
+    align-items: center; gap: 8px;
+    background: var(--lv-action); color: #fff;
+    border-radius: var(--r-pill); padding: 13px 22px;
+    font-size: 14.5px; font-weight: 600;
+    box-shadow: 0 8px 24px rgba(33, 26, 42, .25);
+    transition: background-color .2s, transform .15s;
+  }
+  .float-cta:hover { background: var(--lv-action-hover); transform: translateY(-2px); }
+  .float-cta svg { width: 15px; height: 15px; }
+}
+
+/* ---------- 友情/权威链接 ---------- */
+.footer__orgs { max-width: 1200px; margin: 0 auto; padding: 0 32px 22px; }
+.footer__orgs h4 { font-size: 12px; font-weight: 600; color: var(--lv-ink-3); letter-spacing: .04em; margin-bottom: 8px; }
+.footer__orgs ul { list-style: none; display: flex; flex-wrap: wrap; gap: 6px 22px; }
+.footer__orgs a { font-size: 12.5px; color: var(--lv-ink-3); }
+.footer__orgs a:hover { color: var(--lv-ink); }
+
 /* ---------- 页头（内页） ---------- */
 .page-head { padding: 64px 32px 8px; max-width: 1200px; margin: 0 auto; }
 .page-head .breadcrumb { font-size: 13px; color: var(--lv-ink-3); margin-bottom: 16px; }
