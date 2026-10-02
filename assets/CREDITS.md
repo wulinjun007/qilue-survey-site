@@ -12,3 +12,15 @@
 | mountains-mist.jpg | 云雾山峦 | 1454496522488-7a8e488e8606 | https://images.unsplash.com/photo-1454496522488-7a8e488e8606 |
 
 > 下载时间：2026-10-02 · 参数 w=1600 q=80 · 企业替换为自有素材时，请同步删除对应条目并更新页面标注。
+
+## v0.9.2 增补（7 个细分方向页配图）
+
+| 文件 | 主题 | Unsplash photo ID |
+|---|---|---|
+| engineering-site.jpg | 工地基坑与施工场景 | 1541888946425-d81bb19240f5 |
+| property-house.jpg | 住宅房屋 | 1449844908441-8829872d2607 |
+| planning-city.jpg | 城市航拍 | 1477959858617-67f85cf4f1df |
+| pipeline-urban.jpg | 城市建筑群 | 1486406146926-c627a92ad1ab |
+| monitoring-bridge.jpg | 桥梁 | 1449034446853-66c86144b0ad |
+| remote-earth.jpg | 太空视角地球 | 1451187580459-43490279c0fa |
+| land-farmland.jpg | 农田 | 1500382017468-9049fed747ef |

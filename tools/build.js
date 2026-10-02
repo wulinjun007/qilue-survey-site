@@ -14,8 +14,16 @@ const footer = read('partials/footer.html');
 // 路由表：page file → 输出路径（与 PRD §04 一致）
 const routes = [
   { page: 'index.html', out: 'index.html', nav: 'index', priority: '1.0' },
+  { page: 'services-index.html', out: 'services/index.html', nav: 'services', priority: '0.9' },
   { page: 'services-terrain.html', out: 'services/terrain-mapping.html', nav: 'services', priority: '0.9' },
   { page: 'services-aerial.html', out: 'services/aerial-data.html', nav: 'services', priority: '0.9' },
+  { page: 'services-engineering.html', out: 'services/engineering.html', nav: 'services', priority: '0.7' },
+  { page: 'services-real-estate.html', out: 'services/real-estate.html', nav: 'services', priority: '0.7' },
+  { page: 'services-planning.html', out: 'services/planning.html', nav: 'services', priority: '0.7' },
+  { page: 'services-pipeline.html', out: 'services/pipeline.html', nav: 'services', priority: '0.7' },
+  { page: 'services-monitoring.html', out: 'services/monitoring.html', nav: 'services', priority: '0.7' },
+  { page: 'services-remote-sensing.html', out: 'services/remote-sensing.html', nav: 'services', priority: '0.7' },
+  { page: 'services-land.html', out: 'services/land.html', nav: 'services', priority: '0.7' },
   { page: 'work.html', out: 'work.html', nav: 'work', priority: '0.8' },
   { page: 'about.html', out: 'about.html', nav: 'about', priority: '0.6' },
   { page: 'contact.html', out: 'contact.html', nav: 'contact', priority: '0.8' },
