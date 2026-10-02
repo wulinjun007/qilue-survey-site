@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>项目咨询｜重庆奇略测绘有限公司</title>
+<meta name="description" content="提交项目需求或电话联系：说明项目所在地区与希望解决的问题，沟通测绘服务范围、成果与交付安排。">
+<meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://qilue-survey-site.netlify.app/contact.html">
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="has-contactbar">
+<a class="skip-link" href="#main">跳到主要内容</a>
+<div class="notice-bar">评审预览版 · 企业信息与资质待核验 · 咨询表单未接入后端</div>
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="nav__logo" href="./index.html" aria-label="重庆奇略测绘 首页">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="16" fill="#211a2a"/><path d="M6 22c4-1.2 6-5.4 8-9.4 1.8 3.5 3 5.6 5 5.6 2.6 0 4-4.6 7-6.6" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/><circle cx="24.6" cy="10.4" r="1.7" fill="#fff"/></svg>
+      <span class="logo-text">重庆奇略测绘<small>工程测绘与空间数据服务</small></span>
+    </a>
+    <nav class="nav__menu" id="navMenu" aria-label="主导航">
+      <a class="nav__link" data-nav="index" href="./index.html">首页</a>
+      <a class="nav__link" data-nav="services" href="./services/terrain-mapping.html">服务项目</a>
+      <a class="nav__link" data-nav="work" href="./work.html">案例与成果</a>
+      <a class="nav__link" data-nav="about" href="./about.html">关于奇略</a>
+      <a class="nav__link is-active" data-nav="contact" href="./contact.html">项目咨询</a>
+    </nav>
+    <div class="nav__actions">
+      <a class="btn btn--pill-deep btn--nav" href="./contact.html">提交项目需求</a>
+      <button class="nav__burger" id="navBurger" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="打开菜单"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<div class="page-head">
+  <p class="breadcrumb"><a href="index.html">首页</a> / 项目咨询</p>
+  <h1>项目咨询</h1>
+  <p class="page-sub">请说明项目所在地区和希望解决的问题。暂不确定服务类型，也可以先提交咨询。</p>
+</div>
+
+<section class="section" style="padding-top:28px;">
+  <div class="contact-grid" style="max-width:1060px; margin:0 auto;">
+    <aside class="contact-card">
+      <h3>电话咨询</h3>
+      <div class="phone-line" data-phone-wrap>
+        <a class="phone-num" data-config="telHref" href="#"><span data-config="phone">—</span></a>
+        <button class="copy-btn" type="button" data-copy-phone>复制号码</button>
+      </div>
+      <p class="copy-fallback is-hidden" data-copy-fallback>复制失败：请手动选择号码复制。</p>
+      <p class="field-hint" style="margin-top:10px;">电话来自企业资料，正式公开前待企业核验（当前标注「待核验」）。点击拨号不代表电话已接通。</p>
+      <h3 style="margin-top:24px;">提交前提醒</h3>
+      <ul style="padding-left:18px; font-size:13.5px; color:var(--lv-ink-2); display:grid; gap:6px;">
+        <li>请勿在此填写涉密信息或未经授权的工程资料；</li>
+        <li>项目文件的交接方式将在后续沟通中确认；</li>
+        <li>提交咨询不代表报价确认或项目承接。</li>
+      </ul>
+      <p class="field-hint" style="margin-top:14px;">另见<a href="privacy.html" style="text-decoration:underline;">隐私说明</a>。</p>
+    </aside>
+
+    <div class="form-card">
+      <form id="consultForm" novalidate>
+        <div class="field">
+          <label id="serviceLabel">服务需求 <span class="req" aria-hidden="true">*</span></label>
+          <div class="radio-group" role="radiogroup" aria-labelledby="serviceLabel">
+            <label class="radio-card"><input type="radio" name="service" value="terrain"> 原始地貌／地形图测绘</label>
+            <label class="radio-card"><input type="radio" name="service" value="aerial"> 无人机航测内业三维采集／数据处理</label>
+            <label class="radio-card"><input type="radio" name="service" value="unsure"> 暂不确定，需要沟通</label>
+          </div>
+          <p class="field-error" role="alert"></p>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="f-region">项目所在地区 <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="f-region" name="region" placeholder="如：重庆市潼南区" autocomplete="off">
+            <p class="field-error" role="alert"></p>
+            <p class="field-hint">城市／区县即可，无需精准坐标或详细工地地址。</p>
+          </div>
+          <div class="field">
+            <label for="f-phone">联系电话 <span class="req" aria-hidden="true">*</span></label>
+            <input type="tel" id="f-phone" name="phone" placeholder="手机或座机" autocomplete="tel">
+            <p class="field-error" role="alert"></p>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="f-name">联系称呼 <span class="opt">（选填，≤30 字）</span></label>
+            <input type="text" id="f-name" name="name" placeholder="如：王工" autocomplete="off">
+            <p class="field-error" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="f-area">预计面积 <span class="opt">（选填）</span></label>
+            <div style="display:flex; gap:8px;">
+              <input type="number" id="f-area" name="area" min="0" step="any" placeholder="如：2000" style="flex:1;">
+              <select name="areaUnit" aria-label="面积单位" style="width:110px; flex:none;">
+                <option value="sqm">平方米</option>
+                <option value="mu">亩</option>
+                <option value="sqkm">平方公里</option>
+              </select>
+            </div>
+            <p class="field-error" role="alert"></p>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="f-time">期望时间 <span class="opt">（选填）</span></label>
+          <select id="f-time" name="timeType">
+            <option value="">请选择</option>
+            <option value="negotiable">可协商</option>
+            <option value="undecided">尚未确定</option>
+            <option value="date">指定日期</option>
+          </select>
+        </div>
+        <div class="field is-hidden" id="dateField">
+          <label for="f-date">期望开始日期</label>
+          <input type="date" id="f-date" name="timeDate">
+          <p class="field-hint">中国标准时间；实际安排以沟通为准。</p>
+        </div>
+
+        <div class="field">
+          <label for="f-message">需求补充 <span class="opt">（选填，≤500 字）</span></label>
+          <textarea id="f-message" name="message" placeholder="如：大概范围、成果用途、时间要求等"></textarea>
+          <p class="field-error" role="alert"></p>
+          <p class="field-hint">请勿填写涉密、敏感或未授权的工程资料。</p>
+        </div>
+
+        <div class="field">
+          <label class="checkbox-line">
+            <input type="checkbox" name="privacy">
+            <span>我已阅读<a href="privacy.html">《隐私说明》</a>，同意重庆奇略测绘有限公司为处理本次项目咨询使用我提交的联系信息和需求内容。<span class="req" aria-hidden="true">*</span></span>
+          </label>
+          <p class="field-error" role="alert"></p>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn btn--pill-deep" type="submit" id="formSubmit" style="width:100%;">提交项目需求</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </div>
+
+        <div class="form-demo-note" id="formDemoNote">
+          <strong>演示环境：</strong>本站为评审预览版，咨询表单<strong>尚未接入后端</strong>——本次提交不会被保存或发送，也不会生成咨询编号。正式上线版本将完成真实保存、跟进与通知流程（PRD §8）。如需现在联系，请使用左侧电话。
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+<div class="contact-bar" aria-label="快捷联系">
+  <a class="btn btn--outline" data-config="telHref" href="#">电话咨询</a>
+  <a class="btn btn--pill-deep" href="./contact.html">提交需求</a>
+</div>
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <span class="nav__logo" style="font-size:17px;">
+        <svg viewBox="0 0 32 32" aria-hidden="true" style="width:24px;height:24px;"><rect width="32" height="32" rx="16" fill="#211a2a"/><path d="M6 22c4-1.2 6-5.4 8-9.4 1.8 3.5 3 5.6 5 5.6 2.6 0 4-4.6 7-6.6" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/><circle cx="24.6" cy="10.4" r="1.7" fill="#fff"/></svg>
+        <span class="logo-text">重庆奇略测绘</span>
+      </span>
+      <p>工程测绘与空间数据服务（定位草案）。围绕地形地貌测绘与航测内业数据处理需求，沟通项目范围、成果要求与交付安排。</p>
+    </div>
+    <div class="footer__col">
+      <h4>导航</h4>
+      <ul>
+        <li><a href="./index.html">首页</a></li>
+        <li><a href="./services/terrain-mapping.html">原始地貌／地形图测绘</a></li>
+        <li><a href="./services/aerial-data.html">航测内业三维采集／数据处理</a></li>
+        <li><a href="./work.html">案例与成果</a></li>
+        <li><a href="./about.html">关于奇略</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>咨询与说明</h4>
+      <ul>
+        <li><a href="./contact.html">提交项目需求</a></li>
+        <li><a href="./privacy.html">隐私说明</a></li>
+        <li>电话：<span data-config="phone">—</span><span data-phone-wrap style="margin-left:6px;"></span></li>
+        <li><span data-config="addressLabel">注册地址</span>：<span data-config="address">—</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__note">
+    <span>© <span id="year">2026</span> 重庆奇略测绘有限公司</span>
+    <span>评审预览版 · 正式上线前须完成企业信息核验与适用备案手续（PRD NFR-004）</span>
+  </div>
+</footer>
+<script src="./assets/js/config.js" defer></script>
+<script src="./assets/js/main.js" defer></script>
+
+</body>
+</html>
